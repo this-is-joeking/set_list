@@ -41,6 +41,7 @@ group :development, :test do
   gem 'capybara' #gives way to use rspec to interact with website like a user would
   gem 'launchy' # gives keyword save_and_open_page
   gem 'simplecov'
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
