@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   # alternativiley /songs/ is static so it has to be /songs/
 
   get '/artists/:id', to: 'artists#show'
+  get '/artists/:artist_id/songs', to: 'artist_songs#index'
 end
