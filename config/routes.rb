@@ -14,7 +14,10 @@ Rails.application.routes.draw do
   # the colon means that section is dynamic, it could be anything
   # :id behaves similarly to a variable here, not really a symbol, it is part of DSL
   # alternativiley /songs/ is static so it has to be /songs/
+  get '/artists/new', to: 'artists#new'
 
   get '/artists/:id', to: 'artists#show'
   get '/artists/:artist_id/songs', to: 'artist_songs#index'
+  get '/artists', to: 'artists#index'
+  post '/artists', to: 'artists#create'
 end
